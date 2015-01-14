@@ -1,3 +1,55 @@
 @charset "UTF-8";
 /* CSS Document */
 
+#logo{
+	
+	padding: 12px;
+}
+
+header{
+	padding: 10px;
+}
+
+#searchButton{
+	color: #00af9e;
+	
+}
+	
+#nav-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#nav-menu.navbar-default {
+    font-size: 16px;
+    background-color: rgba(0, 173, 157, 1);
+    border-width: 1px;
+    border-radius: 4px;
+}
+#nav-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#nav-menu.navbar-default .navbar-nav>li>a:hover,
+#nav-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(84, 68, 68, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#nav-menu.navbar-default .navbar-nav>.active>a,
+#nav-menu.navbar-default .navbar-nav>.active>a:hover,
+#nav-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(250, 144, 0, 1);
+}
+#nav-menu.navbar-default .navbar-toggle {
+    border-color: #fa9000;
+}
+#nav-menu.navbar-default .navbar-toggle:hover,
+#nav-menu.navbar-default .navbar-toggle:focus {
+    background-color: #fa9000;
+}
+#nav-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fa9000;
+}
+#nav-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#nav-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #00ad9d;
+}
