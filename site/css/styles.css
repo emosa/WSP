@@ -1,15 +1,25 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	background-image:url(../images/bck.jpg);
+}
+
 #logo{
 	
-	padding: 12px;
+	padding: 10px;
 }
 
 header{
 	padding: 10px;
 }
 
+img{
+    max-width: 100%; 
+	display:block; 
+	height: auto;
+} 
+	
 #searchButton{
 	color: #00af9e;
 	
@@ -36,7 +46,7 @@ header{
 #nav-menu.navbar-default .navbar-nav>.active>a,
 #nav-menu.navbar-default .navbar-nav>.active>a:hover,
 #nav-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(0, 0, 0, 1);
+    color:#FFFFFF;
     background-color: rgba(250, 144, 0, 1);
 }
 #nav-menu.navbar-default .navbar-toggle {
