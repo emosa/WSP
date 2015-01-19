@@ -1,573 +1,359 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Classrom Search Engine</title>
+        <meta name="description" content="Struggling with a school subject? Get help in math, science, social studies, english, and more. Live chat 24/7.">
+        <meta content="homework help, reference site, educational games, school search engine, educational videos, educational worksheets, homework search engine" name="keywords">
+		<meta name="author" content="Elimarie Morales Santiago">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+     
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+		<link rel="shortcut icon" href="img/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		<header id="header">
+			<div class="tab-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 col-md-3 col-lg-3">
+							<a href="index.html"><img src="images/logo.png" alt="logo" class="logo" /></a>
+						</div>
+						<div class="col-sm-9 col-md-9 col-lg-9">
+							<div class="form-group">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#">Contact us</a></li>
+									<li><a href="#">Login</a></li>
+								  </ul>
+								<form class="navbar-form navbar-left" role="search">
+									<div class="form-group">
+									  <input type="text" class="form-control" placeholder="Search">
+									  <i class="fa fa-search"></i>
+									</div>
+								 </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 ">
+						<div class="mainmenu">
+							<ul id="nav">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="results.html">Search</a></li>
+								<li><a href="detail.html">Details</a></li>
+								<li><a href="favorites.html">Favorites</a></li>
+								<li><a href="login.html">Login</a></li>
+								<li><a href="signup.html">Sign up</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="slider" class="slider">
+			<div class="container">
+				<div class="row">
+					<div role="tabpanel" class="tabbable tabs-left">
 
-    <title>Classrom Search Engine</title>
-    <meta content=
-    "Struggling with a school subject? Get help in math, science, social studies, english, and more. Live chat 24/7."
-    name="description">
-    <meta content=
-    "free online tutoring, online school lessons, online tutoring, free homework help, online assignment help"
-    name="keywords">
-    <meta content="Elimarie Morales Santiago" name="author">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- Bootstrap -->
-    <link href=
-    "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    rel="stylesheet">
-    <link href=
-    'http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600italic'
-    rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel=
-    'stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- End bootstrap -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href="img/ico/favicon.ico" rel="shortcut icon">
-    <link href="img/ico/apple-touch-icon-144-precomposed.png" rel=
-    "apple-touch-icon-precomposed" sizes="144x144">
-    <link href="img/ico/apple-touch-icon-114-precomposed.png" rel=
-    "apple-touch-icon-precomposed" sizes="114x114">
-    <link href="img/ico/apple-touch-icon-72-precomposed.png" rel=
-    "apple-touch-icon-precomposed" sizes="72x72">
-    <link href="img/ico/apple-touch-icon-57-precomposed.png" rel=
-    "apple-touch-icon-precomposed">
-</head>
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#welcome" aria-controls="welcome" role="tab" data-toggle="tab">
+							<h2>Homework</h2>
+							<p>Made easy</p>
+						</a></li>
+						<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">
+							<h2>Video</h2>
+							<p>Enhanced video learning</p>
+						</a></li>
+						<li role="presentation"><a href="#search" aria-controls="search" role="tab" data-toggle="tab">
+							<h2>Search</h2>
+							<p>Over a 1000 topics</p>
+						</a></li>
+						<li role="presentation"><a href="#track" aria-controls="track" role="tab" data-toggle="tab">
+							<h2>Rewards</h2>
+							<p>Track your progress</p>
+						</a></li>
+					  </ul>
 
-<body>
-    <!-- javascript -->
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> <script src="js/bootstrap.min.js"></script> <!-- end javascript -->
-     <!-- header -->
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active " id="welcome">
+							<img class="img-responsive" src="images/1.jpg" alt="" />
+							<div class="slider_caption col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+								<p>Classroom Search Engine, helps elementary to high school students  
+								and parents find reliable guides and informationto help them complete 
+								assignments and projects.</p>
+								
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="video">
+							<img class="img-responsive" src="images/2.jpg" alt="" />
+							<div class="slider_caption  col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+								<p>Learning with multimedia offer students a
+                            	valuable learning experience, and makes learning
+                            	more engaging and fun!</p>
+							
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="search">
+							<img class="img-responsive" src="images/3.jpg" alt="" />
+							<div class="slider_caption  col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+								<p>Generate a vast variety of reliable information 
+                                and help you find data on any subject that you need 
+                                through a single search.</p>
+								
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="track">
+							<img class="img-responsive" src="images/4.jpg" alt="" />
+							<div class="slider_caption  col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+								<p>Track your progress and earn stars. When students 
+                                track their own progress using rewards, 
+                                the gains are even higher.</p>
+								
+							</div>
+						</div>
+					  </div>
 
-
-    <header id="header">
-        <div class="tab-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 col-md-3 col-lg-3">
-                        <a href="#"><img alt="logo" class="logo" height="123"
-                        src="images/logo.png" width="178"></a>
-                    </div>
-
-
-                    <div class="col-sm-9 col-md-9 col-lg-9">
-                        <div class="form-group">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="#">Contact us</a>
-                                </li>
-
-
-                                <li>
-                                    <a href="#">Help</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="navbar navbar-default" id="nav-menu">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><img alt="Brand"
-                    src="images/brand.png"></a> <button class="navbar-toggle"
-                    data-target=".navbar-menubuilder" data-toggle="collapse"
-                    type="button"><span class="sr-only">Toggle
-                    navigation</span> <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> <span class=
-                    "icon-bar"></span></button>
-                </div>
-
-
-                <div class="collapse navbar-collapse navbar-menubuilder">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="active">
-                            <a href="index.html">Home</a>
-                        </li>
-
-						<li>
-                            <a href="results.html">Search</a>
-                        </li>
-                        
-                        <li>
-                            <a href="detail.html">Details</a>
-                        </li>
-
-                        <li>
-                            <a href="favorites.html">Favorites</a>
-                        </li>
-
-                        <li style="list-style: none; display: inline">
-                            <form class="navbar-form navbar-left">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder=
-                                    "Search" type="text">
-                                </div>
-                                <button class="btn btn-default" id=
-                                "searchButton" type="submit">Submit</button>
-                            </form>
-                        </li>
-
-
-                        <li>
-                            <a href="login.html">Login</a>
-                        </li>
-
-
-                        <li>
-                            <a href="signup.html">Sign up</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- end header -->
-    <!-- slider -->
-
-
-    <section class="slider" id="slider">
-        <div class="container">
-            <div class="row">
-                <div class="tabbable tabs-left">
-                    <!-- Nav tabs -->
-
-
-                    <ul class="nav nav-tabs">
-                        <li>
-                            <a data-toggle="tab" href="#video">
-                            <h2>Video</h2>
-
-
-                            <p>Learn with Video Lessons</p></a>
-                        </li>
-
-
-                        <li class="active">
-                            <a data-toggle="tab" href="#step">
-                            <h2>Learn Step by Step</h2>
-
-
-                            <p>Guided Practice</p></a>
-                        </li>
-
-
-                        <li>
-                            <a data-toggle="tab" href="#download">
-                            <h2>Download</h2>
-
-
-                            <p>Download Resources</p></a>
-                        </li>
-
-
-                        <li>
-                            <a data-toggle="tab" href="#track">
-                            <h2>Progress Tracker</h2>
-
-
-                            <p>Track your progress</p></a>
-                        </li>
-                    </ul>
-                    <!-- Tab panes -->
-
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade" id="video">
-                            <img alt="video" class="img-responsive" src=
-                            "images/slide1.jpg">
-
-                            <div class=
-                            "slider_caption col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-                            <p>Learning with multimedia offer students a
-                            valuable learning experience, and makes learning
-                            more engaging and fun!</p>
-                            </div>
-                        </div>
-
-
-                        <div class="tab-pane fade in active" id="step">
-                            <img alt="step" class="img-responsive" src=
-                            "images/slide2.jpg">
-
-                            <div class=
-                            "slider_caption col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-                            <p>Through practice with feedback, students learn
-                            to correct errors or mistakes and master a skill or
-                            concept.</p>
-                            </div>
-                        </div>
-
-
-                        <div class="tab-pane fade" id="download">
-                            <img alt="download" class="img-responsive" src=
-                            "images/slide3.jpg">
-
-                            <div class=
-                            "slider_caption col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-                            <p>Worksheets are a great resource to help students
-                            learn by helping them make subjects like math,
-                            writing, reading, and social studies fun!</p>
-                            </div>
-                        </div>
-
-
-                        <div class="tab-pane fade" id="track">
-                            <img alt="track" class="img-responsive">
-
-                            <div class=
-                            "slider_caption col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
-                            <p>When students track their own progress they feel
-                            more confident and helps them build even more
-                            skills.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end slider -->
-   
-   
-    <!-- content notes-->
-    <section class="content" id="content">
-        <div class="container">
-            <div class="row">
-                <div class="content_warp">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="main_content_warp">
-                            <h2>Why Clasroom SE?</h2>
-                            <img alt="" class="img-responsive story_img" src=
-                            "images/slide5.jpg">
-
-                            <p>Classroom Search Engine, helps elementary to
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="content" class="content">
+			<div class="container">
+				<div class="row">
+					<div class="content_warp">
+						<div class="col-sm-6 col-md-6 col-lg-6">
+							<div class="main_content_warp">
+								
+								<h2>Why Clasroom SE?</h2>
+								<img src="images/slide5.jpg" alt="" class="img-responsive story_img"></img>
+								<p class="text-justify">Classroom Search Engine, helps elementary to
                             high school students and parents find reliable
                             guides and information to help them learn and
-                            complete homeworks, assignments, projects, and much
-                            more for FREE! Why Free? Because we believe that
+                            complete homework, projects, and much more for 
+                            FREE! Why Free? Because we believe that
                             every child needs equal access to high-quality
                             education, and the opportunity to reach their full
                             potential. We strive to give parents a piece of
-                            mind and help them their children enrich their
-                            knowledge providing the free tools and resources to
-                            succeed in school.</p>
+                            mind and help their children enrich their
+                            knowledge providing them with free tools 
+                            and resources to succeed in school.</p>
+                            <p><em>Connect from anywhere and anytime.</em></p>
 
+                            <p><em>Live chat with our tutors 24/7.</em></p>
 
-                            <p>Connect from anywhere and anytime.</p>
-
-
-                            <p>Live chat with our tutors 24/7.</p>
-
-
-                            <p>We guarantee your child will improve their
-                            grades!</p>
+                            <p><em>We guarantee your child will improve their
+                            grades!</em></p>
                             <a class="btn" href="#">Read More +</a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-3 col-md-3 col-lg-3">
-                        <div class="popular_subjects">
-                            <div class="page_title">
-                                <h2>Popular Subjects</h2>
-                            </div>
-
-
-                            <div class="panel-group" id="accordion">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title"><a data-parent=
-                                        "#accordion" data-toggle="collapse"
-                                        href="#collapseOne">Maths</a>
-                                        </h4>
-                                    </div>
-
-
-                                    <div class="panel-collapse collapse in" id=
-                                    "collapseOne">
-                                        <div class="panel-body">
-                                            <p>We provide hundred's of math
+							</div>
+						</div>
+						<div class="col-sm-3 col-md-3 col-lg-3">
+							<div class="popular_subjects">
+								<div class="page_title">
+									<h2>Popular Subjects</h2>
+								</div>
+								<div id="accordion" class="panel-group">
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Math</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<p>We provide hundred's of math
                                             games, lessons, logic puzzles, word
                                             problems and step by step
-                                            videos.<a href="#" target=
-                                            "_blank">Learn more.</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title"><a data-parent=
-                                        "#accordion" data-toggle="collapse"
-                                        href="#collapseTwo">Science</a>
-                                        </h4>
-                                    </div>
-
-
-                                    <div class="panel-collapse collapse" id=
-                                    "collapseTwo">
-                                        <div class="panel-body">
-                                            <p>Learn about science in a simple
+                                            videos. 
+                                            <a href="#" target="_blank">Learn more.</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Science</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>Learn about science in a simple
                                             and fun way with interactive games,
                                             quizzes, and activity pages.
-                                            <a href="#">Learn more.</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title"><a data-parent=
-                                        "#accordion" data-toggle="collapse"
-                                        href="#collapseThree">English</a>
-                                        </h4>
-                                    </div>
-
-
-                                    <div class="panel-collapse collapse" id=
-                                    "collapseThree">
-                                        <div class="panel-body">
-                                            <p>Study English and have fun at
+                                            <a href="#" target="_blank">Learn more.</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">English</a>
+											</h4>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>Study English and have fun at
                                             the same time. Choose from our wide
                                             selection of vocabulary games,
                                             phrases, numbers, videos and
-                                            more.<a href="#">Learn
-                                            more.</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title"><a data-parent=
-                                        "#accordion" data-toggle="collapse"
-                                        href="#collapseThree">Social
-                                        Studies</a>
-                                        </h4>
-                                    </div>
-
-
-                                    <div class="panel-collapse collapse" id=
-                                    "collapseThree">
-                                        <div class="panel-body">
-                                            <p>Have fun with word puzzles,
+                                            more.
+                                            <a href="#" target="_blank">Learn more.</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Social Studies</a>
+											</h4>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>Have fun with word puzzles,
                                             mazes, map games, worksheets to
                                             will help you learn more history
-                                            about our world. <a href="#"
-                                            target="_blank">Learn more.</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--- Accordion End ==-->
+                                            about our world.
+                                            <a href="#" target="_blank">Learn more.</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--- Accordion End ---->
+						<div class="subcriber_area">
+							<div class="col-sm-3 col-md-3 col-lg-3">
+								<h2>Newsletter Sing Up</h2>
+								<p>Enter your Email Address below to receive Classroom tips Weekly</p>
+								<form class="navbar-form">
+								<div class="form-group">
+								  <input type="text" class="form-control" placeholder="Enter Email">
+								  <button type="submit" class="btn">Submit</button>
+								</div>
+								
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="featured" class="featured_area">
+			<div class="container">
+				<div class="row">
+					<div class="featured">
+						<div class="col-sm-4 col-md-4 col-lg-4" >
+							<div class="featured_content" >
+								<h2 class="page_title">Featured</h2>
+									<ul>
+										<li><a href="#">Bookmark</a></li>
+										<li><a href="#">Share</a></li>
+										<li><a href="#">Live Chat</a></li>
+									</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="featured_content serve text-center">
+								<h2>24/7</h2>
+								<p>Access</p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="featured_content ads">
+								<img class="img-responsive"src="images/ad.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="footer_top">
+			<div class="container">
+				<div class="row">
+					<div class="widgets">
+						<div class="single_widget col-sm-3 col-md-3 col-lg-3">
+							<h2>Get To Know Us</h2>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Testimonials</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="single_widget col-sm-3 col-md-3 col-lg-3">
+							<h2>Learn with us</h2>
+							<ul>
+								<li><a href="#">Search subjects</a></li>
+								<li><a href="#">Live Chat</a></li>
+								<li><a href="#">Resources</a></li>
+							</ul>
+						</div>
+						<div class="single_widget col-sm-3 col-md-3 col-lg-3">
+							<h2>Get To Know Us</h2>
+							<ul>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Google</a></li>
+								<li><a href="#">Youtube</a></li>
+							</ul>
+						</div>
+						<div class="single_widget_social col-sm-3 col-md-3 col-lg-3">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer_content text-center">
+						<p>&copy;2015 Classromm SE</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		
 
-                    <div class="subcriber_area">
-                        <div class="col-sm-3 col-md-3 col-lg-3">
-                            <h2>Newsletter Sing Up</h2>
-
-
-                            <p>Enter your Email Address below to receive
-                            Classroom tips Weekly</p>
-
-
-                            <form class="navbar-form">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder=
-                                    "Enter Email" type="text"> <button class=
-                                    "btn" type="submit">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="featured_area" id="featured">
-        <div class="container">
-            <div class="row">
-                <div class="featured">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="featured_content">
-                            <h2 class="page_title">Featured</h2>
-
-
-                            <ul>
-                                <li>
-                                    <a href="#">Bookmark</a>
-                                </li>
-
-
-                                <li>
-                                    <a href="#">Share</a>
-                                </li>
-
-
-                                <li>
-                                    <a href="#">Live Chat</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="featured_content serve text-center">
-                            <h2>24/7</h2>
-
-
-                            <p>Access</p>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="featured_content ads"><img alt="ad" class=
-                        "img-responsive" src="images/ad.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="wedgets">
-                    <div class="single_widget col-sm-3 col-md-3 col-lg-3">
-                        <h2>Get To Know Us</h2>
-
-
-                        <ul>
-                        
-                       	    <li>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="single_widget col-sm-3 col-md-3 col-lg-3">
-                        <h2>Learn with us</h2>
-
-
-                        <ul>
-                            <li>
-                                <a href="#">Search subjects</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Live Chat</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Resources</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="single_widget col-sm-3 col-md-3 col-lg-3">
-                        <h2>Follow Us</h2>
-
-
-                        <ul>
-                            <li>
-                                <a href="#">Facebook</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Twitter</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Google</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Youtube</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class=
-                    "single_widget_social col-sm-3 col-md-3 col-lg-3">
-                        <ul>
-                            <li>
-                                <a class="fa fa-facebook" href="#" style=
-                                "font-style: italic"></a>
-                            </li>
-
-
-                            <li>
-                                <a class="fa fa-twitter" href="#" style=
-                                "font-style: italic"></a>
-                            </li>
-
-
-                            <li>
-                                <a class="fa fa-google-plus" href="#" style=
-                                "font-style: italic"></a>
-                            </li>
-
-
-                            <li>
-                                <a class="fa fa-youtube" href="#" style=
-                                "font-style: italic"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer_content text-center">
-                    <p>&copy;2015 Classromm SE</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src=
-    "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-	
-	<script src="js/bootstrap.min.js"></script> <script src="js/plugins.js"></script> 				    <script src="js/main.js"></script>
-</body>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
