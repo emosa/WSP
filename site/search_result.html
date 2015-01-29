@@ -1,602 +1,490 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Classrom Search Engine</title>
-        <meta name="description" content="Struggling with a school subject? Get help in math, science, social studies, english, and more. Live chat 24/7.">
-        <meta name="keywords" content="homework help, reference site, educational games, school search engine, educational videos, educational worksheets, homework search engine">
-		<meta name="author" content="Elimarie Morales Santiago">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-		
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-     
-        <script src="js/modernizr-2.6.2.min.js"></script>
-		
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-<<<<<<< HEAD
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
-=======
-		<link rel="shortcut icon" href="images/ico/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png"/>
-		<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
->>>>>>> FETCH_HEAD
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-		<header id="header">
-			<div class="tab-bar">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<a href="index.html"><img src="images/logo.png" alt="logo" class="logo" /></a>
-						</div>
-						<div class="col-sm-8 col-md-8 col-lg-8">
-							<div class="form-group">
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Contact us</a></li>
-									<li><a href="#">Login</a></li>
-								  </ul>
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group">
-									  <input type="text" class="form-control" placeholder="Search">
-									  <i class="fa fa-search"></i>
-									</div>
-								 </form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 ">
-						<div class="mainmenu">
-							<ul id="nav">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="search_result.html">Search</a></li>
-								<li><a href="detail.html">Details</a></li>
-								<li><a href="favorites.html">Favorites</a></li>
-								<li><a href="login.html">Login</a></li>
-								<li><a href="signup.html">Sign up</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		
-<div class="container">
-
-  			<h1>Search</h1>
-        
- 				<div class="panel panel-primary col-md-3">
-    				<div class="panel-heading" id="pheading">
-      					<h3 class="panel-title">Filter by</h3>
-   				    </div>
-    
-    			<div class="panel-body" id="panelsearch">
-  <form>
-   <label>Select Grade*</label>
-
-        <div class="radio">
-                <label for="radios-0"><input checked="checked" id="radios-0"
-                name="radios" type="radio" value="1">Grades K-8</label>
-        </div>
-
-
-        <div class="radio">
-                <label for="radios-1"><input id="radios-1" name="radios" type=
-                "radio" value="2"> Grades 9-12</label>
-        </div>
-        <label>Select Course*</label> <select class="form-control" id=
-        "selectbasic" name="selectbasic">
-                <option value="1">
-                        History
-                </option>
-
-                <option value="2">
-                        English
-                </option>
-
-                <option value="3">
-                        Mathematics
-                </option>
-
-                <option value="4">
-                        Science
-                </option>
-
-                <option value="5">
-                        Languages
-                </option>
-
-                <option value="6">
-                        Technology and Computer Science
-                </option>
-
-                <option value="7">
-                        Special Education
-                </option>
-
-                <option value="8">
-                        Test Preparation
-                </option>
-        </select><br>
-        <label>Select Subject*</label> <select class="form-control" id=
-        "selectsubject" name="selectsubject">
-                <option value="1">
-                        World History
-                </option>
-
-                <option value="2">
-                        British and World Literature
-                </option>
-
-                <option value="3">
-                        Creative Writing
-                </option>
-
-                <option value="4">
-                        English Foundations
-                </option>
-
-                <option value="5">
-                        Gothic Literature
-                </option>
-
-                <option value="6">
-                        Journalism
-                </option>
-
-                <option value="7">
-                        Literary Composition
-                </option>
-
-                <option value="8">
-                        Public Speaking
-                </option>
-
-                <option value="9">
-                        Anthropology
-                </option>
-
-                <option value="10">
-                        Archaeology
-                </option>
-
-                <option value="11">
-                        Civics
-                </option>
-
-                <option value="12">
-                        Contemporary World Issues
-                </option>
-
-                <option value="13">
-                        Economics
-                </option>
-
-                <option value="14">
-                        European History
-                </option>
-
-                <option value="15">
-                        Family and Consumer Science
-                </option>
-
-                <option value="16">
-                        Geography and World Cultures
-                </option>
-
-                <option value="17">
-                        Modern U.S. History
-                </option>
-
-                <option value="18">
-                        Modern World Studies
-                </option>
-
-                <option value="19">
-                        Psychology
-                </option>
-
-                <option value="20">
-                        Sociology
-                </option>
-
-                <option value="21">
-                        U.S. and Global Economics
-                </option>
-
-                <option value="22">
-                        U.S. Government and Politics
-                </option>
-
-                <option value="23">
-                        U.S. History
-                </option>
-
-                <option value="24">
-                        American Literature
-                </option>
-
-                <option value="25">
-                        Algebra
-                </option>
-
-                <option value="26">
-                        Calculus
-                </option>
-
-                <option value="27">
-                        Consumer Math
-                </option>
-
-                <option value="28">
-                        Credit Recovery
-                </option>
-
-                <option value="29">
-                        Developmental Algebra
-                </option>
-
-                <option value="30">
-                        Geometry
-                </option>
-
-                <option value="31">
-                        Integrated Math
-                </option>
-
-                <option value="32">
-                        Integrated Mathematics
-                </option>
-
-                <option value="33">
-                        Math Foundations
-                </option>
-
-                <option value="34">
-                        Personal Finance
-                </option>
-
-                <option value="35">
-                        Practical Math
-                </option>
-
-                <option value="36">
-                        Pre-Algebra
-                </option>
-
-                <option value="37">
-                        Pre-Calculus/Trigonometry
-                </option>
-
-                <option value="38">
-                        Probability and Statistics
-                </option>
-
-                <option value="39">
-                        Astronomy
-                </option>
-
-                <option value="40">
-                        Biology
-                </option>
-
-                <option value="41">
-                        Chemistry
-                </option>
-
-                <option value="42">
-                        Earth Science
-                </option>
-
-                <option value="43">
-                        Environmental Science
-                </option>
-
-                <option value="44">
-                        Forensic Science
-                </option>
-
-                <option value="45">
-                        Physical Science
-                </option>
-
-                <option value="46">
-                        Physics
-                </option>
-
-                <option value="47">
-                        Chinese
-                </option>
-
-                <option value="48">
-                        English
-                </option>
-
-                <option value="49">
-                        French
-                </option>
-
-                <option value="50">
-                        German
-                </option>
-
-                <option value="51">
-                        Japanese
-                </option>
-
-                <option value="52">
-                        Latin
-                </option>
-
-                <option value="53">
-                        Spanish
-                </option>
-
-                <option value="54">
-                        Audio Engineering
-                </option>
-
-                <option value="55">
-                        C++ Programming
-                </option>
-
-                <option value="56">
-                        Computer Fundamentals
-                </option>
-
-                <option value="57">
-                        Computer Literacy
-                </option>
-
-                <option value="58">
-                        Computer Science
-                </option>
-
-                <option value="59">
-                        Digital Arts
-                </option>
-
-                <option value="60">
-                        Digital Photography
-                </option>
-
-                <option value="61">
-                        Engineering Design/CAD
-                </option>
-
-                <option value="62">
-                        Game Design
-                </option>
-
-                <option value="63">
-                        Green Design and Technology
-                </option>
-
-                <option value="64">
-                        Image Design and Editing
-                </option>
-
-                <option value="65">
-                        Programming I—VB.NET
-                </option>
-
-                <option value="66">
-                        Programming II—Java
-                </option>
-
-                <option value="67">
-                        Web Design
-                </option>
-
-                <option value="68">
-                        History
-                </option>
-
-                <option value="69">
-                        Math
-                </option>
-
-                <option value="70">
-                        Language Arts
-                </option>
-
-                <option value="71">
-                        Reading &amp; Writing
-                </option>
-
-                <option value="72">
-                        Study Skills
-                </option>
-
-                <option value="73">
-                        FCAT
-                </option>
-
-                <option value="74">
-                        HSPT
-                </option>
-
-                <option value="75">
-                        ISEE
-                </option>
-
-                <option value="76">
-                        ITBS
-                </option>
-
-                <option value="77">
-                        MCAS
-                </option>
-
-                <option value="78">
-                        SHSAT
-                </option>
-
-                <option value="79">
-                        SSAT
-                </option>
-
-                <option value="80">
-                        STAR
-                </option>
-
-                <option value="81">
-                        TAKS
-                </option>
-        </select><br>
-
-      <button type="button" id="submit">Search</button>
-    </form>
-   </div>
-</div>
-
-<!-- Result Table -->
-	<div class="panel panel-primary col-md-8 col-md-offset-1">
-  		<div class="panel-heading" id="pheading2">
-   			<h3 class="panel-title">Results Panel</h3>
-  		</div>
-  		<div class="panel-body" id="panelsearch2">
-      		<table class="table table-hover">
-   				<thead>
-        			<tr>
-            		<th></th>
-            			<th>Click on results for details</th>
-       	 			</tr>
-    			</thead>
-    	<tbody>
-       	<tr>
-            <td>1</td>
-            <td><a href="detail.html">The Crusades</a></td>
-            
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>American Revolution - Revolutionary War</td>
-            
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Abraham Lincoln</td>
-            
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>World War 1</td>
-            
-        </tr>
-         <tr>
-            <td>5</td>
-            <td>Cuban Missile Crisis</td>
-            
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Civil Rights Movement</td>
-            
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Israeli-Palestinian Conflict</td>
-            
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Spanish-American War</td>
-            
-        </tr>
-        
-    	</tbody>
-    </table>
-  </div>
-</div>
-</div>	
-		
-        
- 
-		<section id="footer_top">
-			<div class="container">
-				<div class="row">
-					<div class="widgets">
-						<div class="single_widget col-sm-3 col-md-3 col-lg-3">
-							<h2>Get To Know Us</h2>
-							<ul>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Testimonials</a></li>
-								<li><a href="#">Contact Us</a></li>
-							</ul>
-						</div>
-						<div class="single_widget col-sm-3 col-md-3 col-lg-3">
-							<h2>Learn with us</h2>
-							<ul>
-								<li><a href="#">Search subjects</a></li>
-								<li><a href="#">Live Chat</a></li>
-								<li><a href="#">Resources</a></li>
-							</ul>
-						</div>
-						<div class="single_widget col-sm-3 col-md-3 col-lg-3">
-							<h2>Get To Know Us</h2>
-							<ul>
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Twitter</a></li>
-								<li><a href="#">Google</a></li>
-								<li><a href="#">Youtube</a></li>
-							</ul>
-						</div>
-						<div class="single_widget_social col-sm-3 col-md-3 col-lg-3">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer_content text-center">
-						<p>&copy;2015 Classromm SE</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
-</html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]><!--> 
+         <html class="no-js">
+            <!--<![endif]-->
+            <head>
+               <meta charset="UTF-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <title>Classrom Search Engine</title>
+               <meta name="description" content="Struggling with a school subject? Get help in math, science, social studies, english, and more. Live chat 24/7.">
+               <meta name="keywords" content="homework help, reference site, educational games, school search engine, educational videos, educational worksheets, homework search engine">
+               <meta name="author" content="Elimarie Morales Santiago">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+               <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600italic' rel='stylesheet' type='text/css'>
+               <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+               <link rel="stylesheet" href="css/bootstrap.css">
+               <link rel="stylesheet" href="css/animate.min.css">
+               <link rel="stylesheet" href="css/normalize.css">
+               <link rel="stylesheet" href="css/styles.css">
+               <script src="js/modernizr-2.6.2.min.js"></script>
+               <!--[if lt IE 9]>
+               <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+               <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+               <![endif]-->
+               <link rel="shortcut icon" href="images/favicon.ico">
+               <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
+               <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
+               <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
+               <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+            </head>
+            <body>
+               <!--[if lt IE 7]>
+               <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+               <![endif]-->
+               <header id="header">
+                  <div class="tab-bar">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-sm-4 col-md-4 col-lg-4">
+                              <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" /></a>
+                           </div>
+                           <div class="col-sm-8 col-md-8 col-lg-8">
+                              <div class="form-group">
+                                 <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Login</a></li>
+                                 </ul>
+                                 <form class="navbar-form navbar-left" role="search">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="Search">
+                                       <i class="fa fa-search"></i>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 ">
+                           <div class="mainmenu">
+                              <ul id="nav">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="search_result.html">Search</a></li>
+                                 <li><a href="detail.html">Details</a></li>
+                                 <li><a href="favorites.html">Favorites</a></li>
+                                 <li><a href="login.html">Login</a></li>
+                                 <li><a href="signup.html">Sign up</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </header>
+               <div class="container">
+                  <h1>Search</h1>
+                  <div class="panel panel-primary col-md-3">
+                     <div class="panel-heading" id="pheading">
+                        <h3 class="panel-title">Filter by</h3>
+                     </div>
+                     <div class="panel-body" id="panelsearch">
+                        <form>
+                           <label>Select Grade*</label>
+                           <div class="radio">
+                              <label for="radios-0"><input checked="checked" id="radios-0"
+                                 name="radios" type="radio" value="1">Grades K-8</label>
+                           </div>
+                           <div class="radio">
+                              <label for="radios-1"><input id="radios-1" name="radios" type=
+                                 "radio" value="2"> Grades 9-12</label>
+                           </div>
+                           <label>Select Course*</label> 
+                           <select class="form-control" id=
+                              "selectbasic" name="selectbasic">
+                              <option value="1">
+                                 History
+                              </option>
+                              <option value="2">
+                                 English
+                              </option>
+                              <option value="3">
+                                 Mathematics
+                              </option>
+                              <option value="4">
+                                 Science
+                              </option>
+                              <option value="5">
+                                 Languages
+                              </option>
+                              <option value="6">
+                                 Technology and Computer Science
+                              </option>
+                              <option value="7">
+                                 Special Education
+                              </option>
+                              <option value="8">
+                                 Test Preparation
+                              </option>
+                           </select>
+                           <br>
+                           <label>Select Subject*</label> 
+                           <select class="form-control" id=
+                              "selectsubject" name="selectsubject">
+                              <option value="1">
+                                 World History
+                              </option>
+                              <option value="2">
+                                 British and World Literature
+                              </option>
+                              <option value="3">
+                                 Creative Writing
+                              </option>
+                              <option value="4">
+                                 English Foundations
+                              </option>
+                              <option value="5">
+                                 Gothic Literature
+                              </option>
+                              <option value="6">
+                                 Journalism
+                              </option>
+                              <option value="7">
+                                 Literary Composition
+                              </option>
+                              <option value="8">
+                                 Public Speaking
+                              </option>
+                              <option value="9">
+                                 Anthropology
+                              </option>
+                              <option value="10">
+                                 Archaeology
+                              </option>
+                              <option value="11">
+                                 Civics
+                              </option>
+                              <option value="12">
+                                 Contemporary World Issues
+                              </option>
+                              <option value="13">
+                                 Economics
+                              </option>
+                              <option value="14">
+                                 European History
+                              </option>
+                              <option value="15">
+                                 Family and Consumer Science
+                              </option>
+                              <option value="16">
+                                 Geography and World Cultures
+                              </option>
+                              <option value="17">
+                                 Modern U.S. History
+                              </option>
+                              <option value="18">
+                                 Modern World Studies
+                              </option>
+                              <option value="19">
+                                 Psychology
+                              </option>
+                              <option value="20">
+                                 Sociology
+                              </option>
+                              <option value="21">
+                                 U.S. and Global Economics
+                              </option>
+                              <option value="22">
+                                 U.S. Government and Politics
+                              </option>
+                              <option value="23">
+                                 U.S. History
+                              </option>
+                              <option value="24">
+                                 American Literature
+                              </option>
+                              <option value="25">
+                                 Algebra
+                              </option>
+                              <option value="26">
+                                 Calculus
+                              </option>
+                              <option value="27">
+                                 Consumer Math
+                              </option>
+                              <option value="28">
+                                 Credit Recovery
+                              </option>
+                              <option value="29">
+                                 Developmental Algebra
+                              </option>
+                              <option value="30">
+                                 Geometry
+                              </option>
+                              <option value="31">
+                                 Integrated Math
+                              </option>
+                              <option value="32">
+                                 Integrated Mathematics
+                              </option>
+                              <option value="33">
+                                 Math Foundations
+                              </option>
+                              <option value="34">
+                                 Personal Finance
+                              </option>
+                              <option value="35">
+                                 Practical Math
+                              </option>
+                              <option value="36">
+                                 Pre-Algebra
+                              </option>
+                              <option value="37">
+                                 Pre-Calculus/Trigonometry
+                              </option>
+                              <option value="38">
+                                 Probability and Statistics
+                              </option>
+                              <option value="39">
+                                 Astronomy
+                              </option>
+                              <option value="40">
+                                 Biology
+                              </option>
+                              <option value="41">
+                                 Chemistry
+                              </option>
+                              <option value="42">
+                                 Earth Science
+                              </option>
+                              <option value="43">
+                                 Environmental Science
+                              </option>
+                              <option value="44">
+                                 Forensic Science
+                              </option>
+                              <option value="45">
+                                 Physical Science
+                              </option>
+                              <option value="46">
+                                 Physics
+                              </option>
+                              <option value="47">
+                                 Chinese
+                              </option>
+                              <option value="48">
+                                 English
+                              </option>
+                              <option value="49">
+                                 French
+                              </option>
+                              <option value="50">
+                                 German
+                              </option>
+                              <option value="51">
+                                 Japanese
+                              </option>
+                              <option value="52">
+                                 Latin
+                              </option>
+                              <option value="53">
+                                 Spanish
+                              </option>
+                              <option value="54">
+                                 Audio Engineering
+                              </option>
+                              <option value="55">
+                                 C++ Programming
+                              </option>
+                              <option value="56">
+                                 Computer Fundamentals
+                              </option>
+                              <option value="57">
+                                 Computer Literacy
+                              </option>
+                              <option value="58">
+                                 Computer Science
+                              </option>
+                              <option value="59">
+                                 Digital Arts
+                              </option>
+                              <option value="60">
+                                 Digital Photography
+                              </option>
+                              <option value="61">
+                                 Engineering Design/CAD
+                              </option>
+                              <option value="62">
+                                 Game Design
+                              </option>
+                              <option value="63">
+                                 Green Design and Technology
+                              </option>
+                              <option value="64">
+                                 Image Design and Editing
+                              </option>
+                              <option value="65">
+                                 Programming I—VB.NET
+                              </option>
+                              <option value="66">
+                                 Programming II—Java
+                              </option>
+                              <option value="67">
+                                 Web Design
+                              </option>
+                              <option value="68">
+                                 History
+                              </option>
+                              <option value="69">
+                                 Math
+                              </option>
+                              <option value="70">
+                                 Language Arts
+                              </option>
+                              <option value="71">
+                                 Reading &amp; Writing
+                              </option>
+                              <option value="72">
+                                 Study Skills
+                              </option>
+                              <option value="73">
+                                 FCAT
+                              </option>
+                              <option value="74">
+                                 HSPT
+                              </option>
+                              <option value="75">
+                                 ISEE
+                              </option>
+                              <option value="76">
+                                 ITBS
+                              </option>
+                              <option value="77">
+                                 MCAS
+                              </option>
+                              <option value="78">
+                                 SHSAT
+                              </option>
+                              <option value="79">
+                                 SSAT
+                              </option>
+                              <option value="80">
+                                 STAR
+                              </option>
+                              <option value="81">
+                                 TAKS
+                              </option>
+                           </select>
+                           <br>
+                           <button type="button" id="submit">Search</button>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- Result Table -->
+                  <div class="panel panel-primary col-md-8 col-md-offset-1">
+                     <div class="panel-heading" id="pheading2">
+                        <h3 class="panel-title">Results Panel</h3>
+                     </div>
+                     <div class="panel-body" id="panelsearch2">
+                        <table class="table table-hover">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>Click on results for details</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td><a href="detail.html">The Crusades</a></td>
+                              </tr>
+                              <tr>
+                                 <td>2</td>
+                                 <td>American Revolution - Revolutionary War</td>
+                              </tr>
+                              <tr>
+                                 <td>3</td>
+                                 <td>Abraham Lincoln</td>
+                              </tr>
+                              <tr>
+                                 <td>4</td>
+                                 <td>World War 1</td>
+                              </tr>
+                              <tr>
+                                 <td>5</td>
+                                 <td>Cuban Missile Crisis</td>
+                              </tr>
+                              <tr>
+                                 <td>6</td>
+                                 <td>Civil Rights Movement</td>
+                              </tr>
+                              <tr>
+                                 <td>7</td>
+                                 <td>Israeli-Palestinian Conflict</td>
+                              </tr>
+                              <tr>
+                                 <td>8</td>
+                                 <td>Spanish-American War</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <section id="footer_top">
+                  <div class="container">
+                     <div class="row">
+                        <div class="widgets">
+                           <div class="single_widget col-sm-3 col-md-3 col-lg-3">
+                              <h2>Get To Know Us</h2>
+                              <ul>
+                                 <li><a href="#">About Us</a></li>
+                                 <li><a href="#">Testimonials</a></li>
+                                 <li><a href="#">Contact Us</a></li>
+                              </ul>
+                           </div>
+                           <div class="single_widget col-sm-3 col-md-3 col-lg-3">
+                              <h2>Learn with us</h2>
+                              <ul>
+                                 <li><a href="#">Search subjects</a></li>
+                                 <li><a href="#">Live Chat</a></li>
+                                 <li><a href="#">Resources</a></li>
+                              </ul>
+                           </div>
+                           <div class="single_widget col-sm-3 col-md-3 col-lg-3">
+                              <h2>Get To Know Us</h2>
+                              <ul>
+                                 <li><a href="#">Facebook</a></li>
+                                 <li><a href="#">Twitter</a></li>
+                                 <li><a href="#">Google</a></li>
+                                 <li><a href="#">Youtube</a></li>
+                              </ul>
+                           </div>
+                           <div class="single_widget_social col-sm-3 col-md-3 col-lg-3">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section id="footer">
+                  <div class="container">
+                     <div class="row">
+                        <div class="footer_content text-center">
+                           <p>&copy;2015 Classromm SE</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+               <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+               <script src="js/bootstrap.min.js"></script>
+               <script src="js/plugins.js"></script>
+               <script src="js/main.js"></script>
+            </body>
+         </html>
