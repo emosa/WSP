@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@media only print {
+
+body {
+	background:none;
+    padding: 5px;
+	padding-top:2px;
+    line-height: 1.2;
+    word-spacing: 1px;
+	min-width: 100%;
+}
+
+
+title{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	size:24px;
+	
+}
+
+
+.navbar-form{
+	display:none
+}
+
+p{
+	font-size:14px;
+}
+
+#imgprint{
+	width:100%;
+	}
+
+.tabbable{
+	display:none
+}
+
+.container{ 
+	width:100%;
+}
+
+#header{ 
+	width:100%;
+}
+	
+a {
+   display:none;
+    
+}
+
+a.hiddenTab {
+	visibility:hidden; 
+	display:none;
+}
+
+.nav {
+    display: none;
+}
+
+.featured_content{
+	display:none;
+	
+}
+
+.panel{
+	display:none}
+
+
+.subcriber_area{
+	display:none
+}
+
+.widgets{
+	display:none
+}
+
+}
+
+
+
